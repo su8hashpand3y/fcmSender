@@ -5,6 +5,8 @@ const app = express();
 const port = process.env.PORT || 3000;
 
 function getAccessToken() {
+   console.log(process.env.private_key);
+   console.log(process.env.private_key.replace(/\\n/g, '\n'));
     return new Promise(function(resolve, reject) {
       var jwtClient = new google.auth.JWT(
         process.env.client_email,
