@@ -6,7 +6,6 @@ const port = process.env.PORT || 3000;
 
 function getAccessToken() {
     return new Promise(function(resolve, reject) {
-      var key = require('./mess.json');
       var jwtClient = new google.auth.JWT(
         process.env.client_email,
         null,
