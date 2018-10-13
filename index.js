@@ -9,7 +9,7 @@ function getAccessToken() {
       var jwtClient = new google.auth.JWT(
         process.env.client_email,
         null,
-        process.env.private_key,
+        process.env.private_key.replace(/\\n/g, '\n'),
         ["https://www.googleapis.com/auth/firebase.messaging"],
         null
       );
