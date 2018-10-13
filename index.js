@@ -53,6 +53,8 @@ app.get('/message/:deviceId', (req, res) =>
   // res.send('Hello World! Node' + req.params.deviceId)
 });
 
+app.get('/',(req,res)=> res.send("Hello World"))
+
 app.get('/reply/:deviceId', (req, res) =>
 { 
   getAccessToken().then(x=>
