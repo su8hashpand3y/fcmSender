@@ -25,7 +25,7 @@ function getAccessToken() {
   }
   
 
-app.get('message/:deviceId', (req, res) =>
+app.get('/message/:deviceId', (req, res) =>
 { 
   getAccessToken().then(x=>
     {
@@ -53,7 +53,7 @@ app.get('message/:deviceId', (req, res) =>
   // res.send('Hello World! Node' + req.params.deviceId)
 });
 
-app.get('reply/:deviceId', (req, res) =>
+app.get('/reply/:deviceId', (req, res) =>
 { 
   getAccessToken().then(x=>
     {
