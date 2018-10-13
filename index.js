@@ -1,8 +1,8 @@
 const express = require('express')
 const { google, SCOPES}  = require('googleapis');
 var request = require('request');
-const app = express()
-const port = 3000
+const app = express();
+const port = process.env.PORT || 3000;
 
 function getAccessToken() {
     return new Promise(function(resolve, reject) {
