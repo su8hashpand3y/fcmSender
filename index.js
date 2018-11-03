@@ -38,7 +38,7 @@ app.get('/message/:deviceId', (req, res) =>
         },
         json: {
           "message":{
-            "token" : "efSz8C4HF4E:APA91bE-NL9YBE7YLgR2pQ8UcMCSgyo6cXMbcO-m7K7vL0F-y7clK3VVgrhqun0T9xvZE6Dt6oyiuyoqxxyusSdnhm_qE33i2nBl7RM6m7EEg1itw0JWvAkaCJ6TW9Kg0A7QwV7D3BGk",
+            "token" : deviceId,
             "notification" : {
               "body" : "You Have new message",
               "title" : "MESSAGE BACK : New Message"
@@ -68,7 +68,7 @@ app.get('/reply/:deviceId', (req, res) =>
         },
         json: {
           "message":{
-            "token" : "efSz8C4HF4E:APA91bE-NL9YBE7YLgR2pQ8UcMCSgyo6cXMbcO-m7K7vL0F-y7clK3VVgrhqun0T9xvZE6Dt6oyiuyoqxxyusSdnhm_qE33i2nBl7RM6m7EEg1itw0JWvAkaCJ6TW9Kg0A7QwV7D3BGk",
+            "token" : deviceId,
             "notification" : {
               "body" : "You have new reply",
               "title" : "MESSAGE BACK : New Reply"
